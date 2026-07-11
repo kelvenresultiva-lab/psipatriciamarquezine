@@ -16,8 +16,16 @@ const poppins = Poppins({
   display: "swap",
 });
 
-// TODO: substituir pelo domínio real quando o site tiver um definido.
-const siteUrl = "https://www.nicoleamorimpsi.com.br";
+// Resolve automaticamente para a URL do deploy (preview ou produção) na Vercel.
+// Defina NEXT_PUBLIC_SITE_URL nas envs do projeto quando o domínio definitivo
+// estiver configurado, para sobrescrever esse valor.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "http://localhost:3000");
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
