@@ -9,56 +9,62 @@ const heroLastName = heroRestName.join(" ");
 
 export default function Hero() {
   return (
-    <section className="relative min-h-[880px] overflow-hidden sm:min-h-[940px] lg:min-h-[860px]">
+    <section className="relative min-h-[820px] overflow-hidden sm:min-h-[860px] lg:min-h-[820px]">
       <Image
         src={heroContent.image.src}
         alt={heroContent.image.alt}
         fill
         priority
-        className="object-cover object-[78%_22%] lg:object-[center_30%]"
+        className="object-cover object-[68%_10%] lg:object-[66%_20%]"
         sizes="100vw"
       />
 
-      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-[65%] bg-gradient-to-t from-black/85 via-black/40 to-transparent" />
+      {/* Sem bloco sólido: o texto se apoia num véu que se dissolve, deixando
+          a foto nítida onde o rosto dela aparece — de baixo pra cima no
+          mobile (rosto livre em cima, texto numa faixa própria embaixo) e
+          da esquerda pra direita no desktop (texto à esquerda). */}
+      <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,rgba(245,232,238,0)_0%,rgba(245,232,238,0)_38%,rgba(245,232,238,0.9)_54%,rgba(245,232,238,1)_68%)] lg:bg-[linear-gradient(to_right,rgba(245,232,238,1)_0%,rgba(245,232,238,0.85)_33%,rgba(245,232,238,0)_58%)]" />
 
-      <div className="relative mx-auto flex min-h-[880px] max-w-7xl flex-col justify-end px-6 pt-24 pb-16 sm:min-h-[940px] sm:pb-20 lg:min-h-[860px] lg:justify-center lg:px-16 lg:pb-36">
+      <div className="relative mx-auto flex min-h-[820px] max-w-7xl flex-col justify-end px-6 pt-16 pb-7 sm:min-h-[860px] sm:pb-16 lg:min-h-[820px] lg:justify-center lg:px-16 lg:py-0 xl:px-20">
         <Reveal>
-          <div className="flex flex-col">
-            <p className="order-2 mb-6 text-sm font-medium tracking-[0.2em] text-gold uppercase lg:order-1 lg:mb-3">
+          <div className="flex max-w-xl flex-col">
+            <Heart size={22} className="mb-4 text-gold" />
+
+            <p className="mb-3 text-sm font-medium tracking-[0.2em] text-gold-dark uppercase">
               {heroContent.subtitle}
             </p>
 
-            <h1 className="order-1 mb-2 max-w-2xl font-serif text-5xl leading-tight text-white sm:text-6xl lg:order-2 lg:mb-6 lg:text-7xl">
+            <h1 className="mb-6 font-serif text-3xl leading-tight whitespace-nowrap text-[#1A1A1A] sm:text-4xl lg:text-6xl lg:whitespace-normal">
               {heroFirstName}
               {heroLastName && (
                 <>
-                  <br />
+                  <br className="hidden lg:block" />
+                  <span className="lg:hidden"> </span>
                   {heroLastName}
                 </>
               )}
             </h1>
 
-            <p className="order-3 mb-10 hidden max-w-md text-lg leading-relaxed text-white/85 sm:block">
+            <p className="mb-8 max-w-md text-lg leading-relaxed text-[#4a4a4a]">
               {heroContent.taglineStart}
-              <br />
-              <em className="font-serif font-semibold text-gold italic">
+              <br className="hidden lg:block" />
+              <em className="hidden font-serif font-semibold text-gold italic lg:inline">
                 {heroContent.taglineHighlight}
-              </em>{" "}
-              <Heart size={18} className="inline-block text-gold align-middle" />
+              </em>
             </p>
 
-            <ul className="order-4 mb-10 max-w-md space-y-4">
+            <ul className="mb-10 hidden max-w-md space-y-4 lg:block">
               {heroContent.bullets.map((bullet) => (
                 <li key={bullet} className="flex items-start gap-3">
                   <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full border-2 border-gold text-gold">
                     <Check size={13} strokeWidth={3} />
                   </span>
-                  <span className="text-white/90">{bullet}</span>
+                  <span className="text-[#333333]">{bullet}</span>
                 </li>
               ))}
             </ul>
 
-            <div className="order-5 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+            <div className="flex flex-col gap-4 sm:flex-row sm:flex-wrap">
               <a
                 href={heroContent.primaryCta.href}
                 target="_blank"
@@ -70,7 +76,7 @@ export default function Hero() {
               </a>
               <a
                 href={heroContent.secondaryCta.href}
-                className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-white/70 px-7 py-3 text-sm font-semibold tracking-wider text-white uppercase transition-colors hover:bg-white hover:text-[#1A1A1A] sm:w-auto"
+                className="inline-flex w-full items-center justify-center gap-2 rounded-full border-2 border-gold/40 px-7 py-3 text-sm font-semibold tracking-wider text-[#1A1A1A] uppercase transition-colors hover:bg-gold hover:border-gold hover:text-white sm:w-auto"
               >
                 {heroContent.secondaryCta.label}
                 <User size={16} />

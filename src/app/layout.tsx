@@ -30,18 +30,20 @@ const siteUrl =
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: `${siteConfig.professionalName} | ${siteConfig.title} em ${siteConfig.city}`,
-  description: `Psicoterapia para adultos, casais e famílias com abordagem psicanalítica. Atendimento presencial em ${siteConfig.city} e online. Agende uma conversa.`,
+  description: `Psicoterapia para adultos e orientação vocacional com Terapia Cognitivo-Comportamental (TCC). Atendimento presencial em ${siteConfig.city} e online. Convênios Unimed e Fusex.`,
   keywords: [
     "psicóloga",
     "psicóloga clínica",
     "psicoterapia",
+    "terapia cognitivo-comportamental",
+    "TCC",
+    "orientação vocacional",
     "terapia online",
     "São João del-Rei",
-    "psicanálise",
   ],
   openGraph: {
     title: `${siteConfig.professionalName} | ${siteConfig.title}`,
-    description: `Psicoterapia para adultos, casais e famílias com abordagem psicanalítica. Atendimento presencial em ${siteConfig.city} e online.`,
+    description: `Psicoterapia para adultos e orientação vocacional com Terapia Cognitivo-Comportamental (TCC). Atendimento presencial em ${siteConfig.city} e online.`,
     url: siteUrl,
     siteName: siteConfig.professionalName,
     locale: "pt_BR",

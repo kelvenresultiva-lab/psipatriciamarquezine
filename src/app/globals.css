@@ -4,11 +4,10 @@
   --background: #ffffff;
   --foreground: #333333;
 
-  --color-gold: #c9a15c;
-  --color-gold-dark: #a9813f;
-  --color-cream: #f5f0e8;
-  --color-cream-dark: #efe7d8;
-  --color-charcoal: #1a1a1a;
+  /* Paleta oficial da marca — usar apenas estas 4 cores em toda a UI. */
+  --color-gold: #8d1f4f; /* bordô principal — botões e destaques */
+  --color-gold-dark: #5e1435; /* bordô escuro — fundos escuros e hover */
+  --color-cream: #f5e8ee; /* rosa claro — seções suaves */
 }
 
 @theme inline {
@@ -17,8 +16,6 @@
   --color-gold: var(--color-gold);
   --color-gold-dark: var(--color-gold-dark);
   --color-cream: var(--color-cream);
-  --color-cream-dark: var(--color-cream-dark);
-  --color-charcoal: var(--color-charcoal);
   --font-sans: var(--font-poppins);
   --font-serif: var(--font-playfair);
 }

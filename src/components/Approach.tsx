@@ -4,10 +4,10 @@ import Reveal from "./Reveal";
 
 export default function Approach() {
   return (
-    <section id="abordagem" className="bg-[#1A1A1A] py-20 lg:py-28">
+    <section id="abordagem" className="bg-gold-dark py-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-8">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-gold uppercase">
+          <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-white uppercase">
             {approachContent.eyebrow}
           </p>
           <h2 className="mb-6 font-serif text-3xl text-white sm:text-4xl">
@@ -24,7 +24,7 @@ export default function Approach() {
           <div className="mb-8 space-y-4">
             {approachContent.highlights.map((item) => (
               <div key={item.title}>
-                <p className="font-serif text-lg text-gold underline decoration-gold decoration-2 underline-offset-4">
+                <p className="font-serif text-lg text-white underline decoration-white decoration-2 underline-offset-4">
                   {item.title}
                 </p>
                 <p className="text-sm text-white/60">{item.subtitle}</p>
@@ -34,7 +34,7 @@ export default function Approach() {
 
           <a
             href="#contato"
-            className="inline-block rounded-full bg-gold px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase transition-colors hover:bg-gold-dark"
+            className="inline-block rounded-full bg-gold px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase transition-opacity hover:opacity-90"
           >
             {approachContent.ctaLabel}
           </a>

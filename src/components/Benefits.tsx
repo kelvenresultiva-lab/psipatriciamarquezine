@@ -30,7 +30,7 @@ export default function Benefits() {
           return (
             <Reveal key={item.number} delayMs={index * 100}>
               <div className="relative rounded-2xl border border-[#EEEEEE] p-6">
-                <span className="pointer-events-none absolute top-2 right-4 font-serif text-5xl text-cream-dark">
+                <span className="pointer-events-none absolute top-2 right-4 font-serif text-5xl text-cream">
                   {item.number}
                 </span>
                 <div className="relative mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-cream">

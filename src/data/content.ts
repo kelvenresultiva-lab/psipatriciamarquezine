@@ -1,22 +1,23 @@
 // Todo o conteúdo textual e de contato do site fica centralizado aqui.
 // Edite os valores abaixo para customizar o site sem precisar mexer nos componentes.
 
-const addressLine1 = "Rua Maurício Batista Sacramento, 11, Sala 3";
-const addressLine2 = "Bairro Fábricas, São João del-Rei - MG, CEP 36301-227";
+const addressLine1 = "Avenida Trinta e Um de Março, 1485, Sala 01";
+const addressLine2 = "Colônia do Marçal, São João del-Rei - MG";
+const addressLandmark = "em cima da Farmácia Santa Terezinha";
 const fullAddress = `${addressLine1}, ${addressLine2}`;
 
 export const siteConfig = {
-  brand: "AFETO",
-  professionalName: "Nicole Amorim",
-  professionalNameShort: "Nicole Amorim",
-  crp: "CRP-MG 04/78461",
-  title: "Psicóloga Clínica",
+  professionalName: "Patrícia Marquezini",
+  professionalNameShort: "Patrícia Marquezini",
+  crp: "CRP 05-34660 / CRP04-IS01426",
+  title: "Psicóloga Clínica e Terapeuta Cognitivo-Comportamental",
   city: "São João del-Rei - MG",
-  phoneDisplay: "(32) 99199-3814",
-  phoneWhatsapp: "5532991993814",
-  email: "nicoleamorimpsi@gmail.com",
+  phoneDisplay: "(32) 99936-0607",
+  phoneWhatsapp: "5532999360607",
+  email: "paty.marquezini@gmail.com",
   addressLine1,
   addressLine2,
+  addressLandmark,
   // Link para abrir no app/site do Google Maps (usado em botões "ver no mapa").
   mapsLinkUrl: `https://www.google.com/maps?q=${encodeURIComponent(fullAddress)}`,
   // URL de embed (usada no <iframe> da seção de mapa).
@@ -36,38 +37,32 @@ export const headerCta = {
   href: `https://wa.me/${siteConfig.phoneWhatsapp}`,
 };
 
-// Legenda curva usada no selo/emblema (logo compacto do header mobile).
-export const emblemCaption = "PSICOLOGIA & PSICANÁLISE";
-
 export const heroContent = {
-  title: "Nicole Amorim",
-  subtitle: "PSICÓLOGA E PSICANALISTA",
-  taglineStart: "Um espaço seguro para você ser,",
-  taglineHighlight: "sentir e se cuidar.",
+  title: "Patrícia Marquezini",
+  subtitle: "PSICÓLOGA CLÍNICA E TCC",
+  taglineStart: "Um espaço de acolhimento e escuta para que você encontre novos caminhos",
+  taglineHighlight: "e cuide de si com respeito e segurança.",
   bullets: [
-    "Atendimento para casal e família.",
-    "Psicóloga e psicanalista.",
-    "Atendimento Presencial (São João Del Rei) e on-line.",
+    "Atendimento online e presencial.",
+    "Psicoterapia para adultos e orientação vocacional.",
+    "Convênios Unimed e Fusex.",
   ],
   primaryCta: {
     label: "MAIS INFORMAÇÕES",
     href: `https://wa.me/${siteConfig.phoneWhatsapp}`,
   },
   secondaryCta: { label: "SOBRE MIM", href: "#sobre" },
-  // Foto composta especificamente para o fundo único do Hero: parede lisa
-  // à esquerda (onde o texto fica) e a Nicole nítida à direita — não precisa
-  // de gradiente escuro artificial por cima, a própria foto já tem o contraste.
   image: {
-    src: "/images/hero-bg.jpg",
-    alt: "Nicole Amorim em seu espaço de atendimento",
+    src: "/images/hero.png",
+    alt: "Patrícia Marquezini em seu espaço de atendimento",
   },
 };
 
 export const introContent = {
   heading: "Um espaço para",
-  headingHighlight: "cuidar de si e das suas relações.",
+  headingHighlight: "cuidar de si com respeito e segurança.",
   paragraph:
-    "A terapia é um convite para desacelerar, ouvir a si mesmo e compreender o que te move. Aqui, você encontra um ambiente seguro e livre de julgamentos para elaborar emoções, melhorar seus relacionamentos e viver com mais equilíbrio e sentido.",
+    "A terapia é um convite para compreender suas emoções e desenvolver recursos para viver com mais equilíbrio. Aqui, você encontra um espaço seguro, sigiloso e livre de julgamentos, fundamentado na Terapia Cognitivo-Comportamental.",
   items: [
     {
       icon: "message-heart",
@@ -76,8 +71,8 @@ export const introContent = {
     },
     {
       icon: "users",
-      title: "Fortalecimento dos vínculos",
-      description: "Apoio para construir relações mais saudáveis e significativas.",
+      title: "Cuidado técnico e humanizado",
+      description: "Conhecimento técnico unido a uma escuta sensível e acolhedora.",
     },
     {
       icon: "user",
@@ -88,22 +83,20 @@ export const introContent = {
 };
 
 export const aboutContent = {
-  // ATENÇÃO: número fictício (dado de exemplo, não confirmado com a profissional).
-  // Substituir pelo tempo real de experiência antes de publicar o site.
-  experienceBadge: "+15 ANOS DE EXPERIÊNCIA",
+  experienceBadge: "TERAPEUTA COGNITIVO-COMPORTAMENTAL",
   image: {
-    src: "/images/sobre-foto.jpg",
-    alt: "Retrato de Nicole Amorim",
+    src: "/images/sobre-foto.png",
+    alt: "Retrato de Patrícia Marquezini",
   },
   formationIcon: "graduation-cap",
-  formationText: "Psicóloga com especialização em Psicologia e Psicanálise.",
-  eyebrow: "OLÁ, SOU NICOLE",
+  formationText:
+    "Psicóloga com especialização em Avaliação Psicológica e Terapia Cognitivo-Comportamental.",
+  eyebrow: "OLÁ, SOU PATRÍCIA",
   heading: "Uma trajetória dedicada ao cuidado emocional",
   paragraphs: [
-    "Sou psicóloga clínica, com atuação voltada ao atendimento de casais e famílias que buscam compreender melhor suas emoções, vínculos e histórias de vida.",
-    "Minha prática é fundamentada na abordagem psicanalítica, entendendo que cada pessoa carrega uma trajetória única, que merece ser ouvida com respeito, sigilo e sem julgamentos.",
-    "Ao longo da minha carreira, já acompanhei diversos pacientes em processos de autoconhecimento, superação de crises e construção de uma vida emocional mais equilibrada.",
-    "Acredito que a psicoterapia é um convite à transformação — um espaço seguro para que você possa se reconhecer e encontrar novos caminhos.",
+    "Sou psicóloga e, acima de tudo, acredito no poder da escuta e do acolhimento. Ao longo da minha trajetória, acompanho pessoas em seus processos de dor, mudança e crescimento, oferecendo um espaço seguro onde cada história é respeitada em sua singularidade.",
+    "Meu trabalho é fundamentado na Terapia Cognitivo-Comportamental, unindo conhecimento técnico a uma escuta sensível e humanizada, para que cada pessoa possa compreender suas emoções e desenvolver recursos para viver com mais equilíbrio e bem-estar.",
+    "Além da prática clínica, atuo como especialista em Avaliação Psicológica e Psicossocial, Orientadora Vocacional, Implementadora da NR-01, Analista de Recursos Humanos e especialista em Psicologia Hospitalar e da Saúde, integrando diferentes experiências em benefício de quem busca cuidado e orientação.",
   ],
   ctaLabel: "VAMOS CONVERSAR?",
 };
@@ -112,84 +105,77 @@ export const galleryContent = {
   eyebrow: "AMBIENTE SEGURO E DE FÁCIL ACESSO",
   heading:
     "Meu espaço de atendimentos foi pensado para que se sinta acolhido e confortável.",
-  subtext: `O consultório fica no Bairro Fábricas, em ${siteConfig.city}, com fácil acesso para quem vem de carro ou transporte público.`,
+  subtext: `O consultório fica em Colônia do Marçal, ${siteConfig.city}, ${siteConfig.addressLandmark}.`,
   images: [
     {
       src: "/images/consultorio-3.jpg",
-      alt: "Entrada do consultório, com poltronas de espera",
-      objectPosition: "center",
-    },
-    {
-      src: "/images/consultorio-2.jpg",
-      alt: "Sala de espera com poltronas e tapete redondo",
+      alt: "Entrada do consultório",
       objectPosition: "center",
     },
     {
       src: "/images/consultorio-1.jpg",
-      alt: "Sala de atendimento com chaise longue",
-      // Foto vertical: desloca o recorte para baixo para manter o sofá visível.
-      objectPosition: "center 75%",
+      alt: "Sala de atendimento com chaise longue e poltronas",
+      objectPosition: "center",
+    },
+    {
+      src: "/images/consultorio-2.jpg",
+      alt: "Canto acolhedor da sala de atendimento",
+      objectPosition: "center",
     },
   ],
 };
 
-// ATENÇÃO: os depoimentos abaixo são fictícios (texto de exemplo).
-// Substituir por avaliações reais antes de publicar o site — divulgar
-// depoimentos inventados como se fossem reais é enganoso e pode violar
-// o CDC (arts. 30/37) e as diretrizes de publicidade do CFP.
+// ATENÇÃO: depoimentos fictícios — preenchidos a pedido da cliente apenas
+// para não deixar a seção vazia. Substituir pelos depoimentos reais antes
+// de publicar o site em definitivo (depoimentos inventados apresentados
+// como reais podem ser considerados enganosos).
 export const testimonialsContent = {
   heading: "O que dizem sobre meu trabalho:",
   summary: {
     name: siteConfig.professionalNameShort,
     subtitle: "Psicóloga | Atendimento Presencial e Online",
-    rating: 5.0,
-    reviewCount: 87,
   },
   reviews: [
     {
-      name: "Marina C.",
+      name: "Camila R.",
       avatar: "woman",
-      timeAgo: "há 2 semanas",
+      timeAgo: "há 3 semanas",
       rating: 5,
-      text: "A Nicole me ajudou a entender padrões emocionais que eu carregava há anos. Um trabalho sério e muito acolhedor, me sinto segura em cada sessão.",
+      text: "A Patrícia me ajudou muito a entender padrões de pensamento que eu repetia há anos. A abordagem cognitivo-comportamental é bem prática, saio de cada sessão com algo pra colocar em prática.",
     },
     {
-      name: "Beatriz A.",
+      name: "Fernanda S.",
       avatar: "mother",
       timeAgo: "há 1 mês",
       rating: 5,
-      text: "Comecei a terapia em um momento muito difícil e encontrei um espaço de escuta genuína, sem julgamentos. Recomendo muito o trabalho dela.",
+      text: "Fiz orientação vocacional com ela num momento de troca de carreira e foi essencial. Profissional muito atenciosa, ética e organizada. Recomendo demais.",
     },
     {
-      name: "Juliana P.",
+      name: "Juliana M.",
       avatar: "young-woman",
       timeAgo: "há 2 meses",
       rating: 5,
-      text: "Profissional extremamente atenciosa e ética. O atendimento online funcionou perfeitamente para minha rotina, sem perder a qualidade do presencial.",
+      text: "Atendimento online funcionou super bem pra minha rotina. Me senti acolhida desde a primeira sessão, sem nenhum julgamento. Uso o convênio Unimed e o processo de reembolso foi tranquilo.",
     },
   ],
 } as const;
 
 export const approachContent = {
   eyebrow: "COMO FUNCIONA MEU TRABALHO:",
-  heading: "Atendimento para casais e famílias",
+  heading: "Psicoterapia individual e orientação vocacional para adultos",
   paragraphs: [
-    "Meu trabalho parte da escuta cuidadosa da história de cada paciente, respeitando o tempo e as particularidades de cada processo terapêutico.",
-    "Utilizo a abordagem psicanalítica como base teórica, buscando construir, junto com você, um caminho de autoconhecimento e transformação genuína.",
+    "Meu trabalho parte da escuta cuidadosa da história de cada paciente, unindo conhecimento técnico a uma escuta sensível e humanizada.",
+    "Utilizo a Terapia Cognitivo-Comportamental como base teórica, ajudando você a compreender suas emoções e desenvolver recursos para viver com mais equilíbrio e bem-estar.",
   ],
   highlights: [
     { title: "Ambiente Seguro", subtitle: "Sigilo e acolhimento em cada sessão" },
     { title: "Resultados Positivos", subtitle: "Acompanhamento comprometido com sua evolução" },
   ],
   ctaLabel: "VAMOS CONVERSAR?",
-  // ATENÇÃO: número fictício (dado de exemplo, não confirmado com a profissional).
-  // Substituir pelo número real de atendimentos antes de publicar o site.
-  badge: "+20Mil ATENDIMENTOS REALIZADOS",
-  // ATENÇÃO: foto gerada por IA (não é uma fotografia real da Nicole) —
-  // placeholder temporário. Substituir por foto real sorrindo quando disponível.
+  badge: "ATENDIMENTO ONLINE E PRESENCIAL",
   image: {
-    src: "/images/abordagem-foto.jpg",
-    alt: "Nicole Amorim sorrindo",
+    src: "/images/abordagem-foto.png",
+    alt: "Patrícia Marquezini sorrindo",
   },
 };
 
@@ -211,7 +197,7 @@ export const benefitsContent = {
       icon: "users-round",
       title: "Melhora nas relações",
       description:
-        "Construa vínculos mais saudáveis com família, amigos e parceiros a partir do autoconhecimento.",
+        "Construa vínculos mais saudáveis com família, amigos e colegas a partir do autoconhecimento.",
     },
     {
       number: "03",
@@ -249,16 +235,16 @@ export const faqContent = {
     {
       question: "Possui convênio ou plano de saúde?",
       answer:
-        "O atendimento é particular, mas forneço recibo (nota fiscal/recibo de pagamento a profissional liberal) para que você solicite o reembolso junto ao seu plano de saúde, quando aplicável.",
+        "Atendo pelos convênios Unimed e Fusex. Também é possível o atendimento particular, com emissão de recibo para solicitar reembolso junto ao seu plano de saúde, quando aplicável.",
     },
     {
-      question: "Qual a melhor idade para iniciar a psicoterapia?",
+      question: "A partir de que idade você atende?",
       answer:
-        "Não existe uma idade certa. Atendo adultos de todas as idades, individualmente ou em atendimento de casal e família — o importante é o desejo de iniciar o processo.",
+        "Atendo adultos que desejam iniciar um processo de autoconhecimento, individualmente ou em orientação vocacional — o importante é o desejo de começar.",
     },
     {
-      question: "Qual o endereço da clínica?",
-      answer: `${siteConfig.addressLine1}, ${siteConfig.addressLine2}.`,
+      question: "Qual o endereço do consultório?",
+      answer: `${siteConfig.addressLine1}, ${siteConfig.addressLine2} (${siteConfig.addressLandmark}).`,
     },
   ],
 };
@@ -273,7 +259,7 @@ export const contactBarContent = [
   {
     icon: "map-pin",
     label: "Endereço",
-    value: `${siteConfig.addressLine1} — ${siteConfig.addressLine2}`,
+    value: `${siteConfig.addressLine1} — ${siteConfig.addressLine2} (${siteConfig.addressLandmark})`,
     href: siteConfig.mapsLinkUrl,
   },
   {
@@ -288,12 +274,12 @@ export const footerContent = {
   quickLinks: [
     { label: "Home", href: "#topo" },
     { label: "Sobre mim", href: "#sobre" },
-    { label: "Serviços", href: "#consultorio" },
+    { label: "Consultório", href: "#consultorio" },
     { label: "Benefícios", href: "#beneficios" },
   ],
   schedule: {
     heading: "Horário de Atendimento",
-    lines: ["Segunda a Sexta: 8h às 20h"],
+    lines: ["Segunda a Sexta: 8h às 18h"],
     note: "As consultas necessitam ser previamente agendadas.",
   },
   ctaLabel: "AGENDAR CONSULTA",
