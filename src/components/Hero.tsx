@@ -15,7 +15,7 @@ export default function Hero() {
         alt={heroContent.image.alt}
         fill
         priority
-        className="object-cover object-[68%_10%] lg:object-[66%_20%]"
+        className="object-cover object-[54%_10%] lg:object-[66%_20%]"
         sizes="100vw"
       />
 
