@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { footerContent, siteConfig, aboutContent } from "@/data/content";
+import InstagramIcon from "./InstagramIcon";
 
 export default function Footer() {
   return (
@@ -23,6 +24,15 @@ export default function Footer() {
               <p className="text-sm">
                 {siteConfig.title} — {siteConfig.crp}
               </p>
+              <a
+                href={siteConfig.instagramUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-2 inline-flex items-center gap-1.5 text-sm hover:text-white"
+              >
+                <InstagramIcon size={16} />
+                {siteConfig.instagramHandle}
+              </a>
             </div>
           </div>
 

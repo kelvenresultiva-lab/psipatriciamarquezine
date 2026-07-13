@@ -15,6 +15,8 @@ export const siteConfig = {
   phoneDisplay: "(32) 99936-0607",
   phoneWhatsapp: "5532999360607",
   email: "paty.marquezini@gmail.com",
+  instagramHandle: "@paty.marquezini",
+  instagramUrl: "https://www.instagram.com/paty.marquezini",
   addressLine1,
   addressLine2,
   addressLandmark,
@@ -267,6 +269,12 @@ export const contactBarContent = [
     label: "E-mail",
     value: siteConfig.email,
     href: `mailto:${siteConfig.email}`,
+  },
+  {
+    icon: "instagram",
+    label: "Instagram",
+    value: siteConfig.instagramHandle,
+    href: siteConfig.instagramUrl,
   },
 ] as const;
 
