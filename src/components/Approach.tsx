@@ -27,16 +27,10 @@ export default function Approach() {
     <section id="abordagem" className="bg-gold-dark py-20 lg:py-28">
       <div className="mx-auto grid max-w-7xl grid-cols-1 items-center gap-16 px-6 lg:grid-cols-2 lg:px-8">
         <Reveal>
-          <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-white uppercase">
-            {approachContent.eyebrow}
-          </p>
           <h2 className="mb-3 font-serif text-3xl text-white sm:text-4xl">
             {approachContent.heading}
           </h2>
-          <span className="mb-5 block h-px w-16 bg-white/40" />
-          <p className="mb-8 leading-relaxed text-white/70">
-            {approachContent.subtext}
-          </p>
+          <span className="mb-8 block h-px w-16 bg-white/40" />
 
           <div className="mb-8 divide-y divide-white/10">
             {approachContent.items.map((item) => {

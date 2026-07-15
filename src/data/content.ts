@@ -163,10 +163,7 @@ export const testimonialsContent = {
 } as const;
 
 export const approachContent = {
-  eyebrow: "COMO FUNCIONA MEU TRABALHO:",
   heading: "Áreas de atuação",
-  subtext:
-    "Mais de 10 anos de experiência unindo Psicologia Clínica e Saúde Mental no Trabalho — da APAE a consultorias em NR-01 para empresas.",
   items: [
     {
       icon: "sofa",
