@@ -28,7 +28,6 @@ export const siteConfig = {
 
 export const navLinks = [
   { label: "Sobre mim", href: "#sobre" },
-  { label: "Especialidades", href: "#especialidades" },
   { label: "Como funciona", href: "#abordagem" },
   { label: "Benefícios", href: "#beneficios" },
   { label: "Depoimentos", href: "#depoimentos" },
@@ -104,59 +103,6 @@ export const aboutContent = {
   ctaLabel: "VAMOS CONVERSAR?",
 };
 
-export const specialtiesContent = {
-  eyebrow: "ESPECIALIDADES",
-  heading: "Áreas de atuação",
-  subtext:
-    "Um olhar amplo, unindo clínica, orientação de carreira e consultoria organizacional.",
-  ctaText: "Quer entender qual dessas áreas faz mais sentido para o seu momento?",
-  ctaLabel: "FALAR NO WHATSAPP",
-  items: [
-    {
-      icon: "stethoscope",
-      title: "Atendimento Clínico",
-      subtitle: "Crianças, adolescentes e adultos — linha TCC",
-      description:
-        "Acolho pessoas de todas as idades usando a Terapia Cognitivo-Comportamental. A ideia é entender como o que pensamos influencia o que sentimos e fazemos. Ajudo a lidar com ansiedade, tristeza, dificuldades na escola ou em casa, problemas de comportamento e outros desafios, com estratégias práticas para cada fase da vida.",
-    },
-    {
-      icon: "compass",
-      title: "Orientação Profissional/Vocacional",
-      subtitle: null,
-      description:
-        "Ajudo pessoas a escolherem ou mudarem de profissão. Juntos, descobrimos seus gostos, habilidades e o que realmente valorizam, para encontrar caminhos que combinem com quem são — seja quem está começando agora ou quem quer mudar de área.",
-    },
-    {
-      icon: "clipboard-list",
-      title: "Avaliação Psicológica e Psicossocial",
-      subtitle: null,
-      description:
-        "É uma análise completa, feita com conversas, instrumentos e observação. Entendo como a pessoa funciona emocionalmente e cognitivamente, e também como sua família, trabalho e convívio social afetam sua vida. Pode servir para tratamento, questões legais, trabalho ou orientação.",
-    },
-    {
-      icon: "hard-hat",
-      title: "Implementação da NR-01",
-      subtitle: null,
-      description:
-        "Apoio empresas a se adequarem a essa norma de segurança e saúde no trabalho. Identifico riscos que podem afetar a saúde mental dos colaboradores e ajudo a criar ações para evitá-los, deixando o ambiente de trabalho mais seguro, conforme a lei.",
-    },
-    {
-      icon: "presentation",
-      title: "Palestras",
-      subtitle: null,
-      description:
-        "Conversas e apresentações sobre temas como saúde mental, relações, carreira, bem-estar no trabalho e outros assuntos. O objetivo é compartilhar informação, fazer refletir e ajudar — adaptadas para estudantes, equipes de trabalho, gestores ou comunidade em geral.",
-    },
-    {
-      icon: "shield-alert",
-      title: "Consultoria em Segurança Patrimonial",
-      subtitle: null,
-      description:
-        "Apoio na avaliação e organização de medidas para proteger pessoas, bens e instalações. Analiso o cenário atual, identifico pontos de risco e ajudo a estruturar rotinas, treinamentos e ações que tornem o ambiente mais seguro e organizado, alinhado às necessidades de cada local.",
-    },
-  ],
-} as const;
-
 export const galleryContent = {
   eyebrow: "AMBIENTE SEGURO E DE FÁCIL ACESSO",
   heading:
@@ -218,17 +164,52 @@ export const testimonialsContent = {
 
 export const approachContent = {
   eyebrow: "COMO FUNCIONA MEU TRABALHO:",
-  heading: "Psicoterapia individual e orientação vocacional para adultos",
-  paragraphs: [
-    "Meu trabalho parte da escuta cuidadosa da história de cada paciente, unindo conhecimento técnico a uma escuta sensível e humanizada.",
-    "Possuo ampla experiência com Saúde Mental no Trabalho e na Psicologia Clínica. Atuei na aplicação e correção de testes psicológicos em concursos públicos da PMERJ e PCERJ. Por 10 anos, trabalhei na empresa Focus Health Solutions como psicóloga responsável pela saúde mental de trabalhadores Onshore e Offshore, realizando avaliações psicossociais e ministrando palestras. Atualmente, atuo como psicóloga clínica na APAE (Associação de Pais e Amigos dos Excepcionais), além de atender no consultório particular e prestar consultorias para empresas, com foco na implementação da NR-01.",
+  heading: "Áreas de atuação",
+  subtext:
+    "Mais de 10 anos de experiência unindo Psicologia Clínica e Saúde Mental no Trabalho — da APAE a consultorias em NR-01 para empresas.",
+  items: [
+    {
+      icon: "sofa",
+      title: "Psicoterapia Clínica",
+      description:
+        "Acolhimento e escuta qualificada para compreender emoções, trabalhar desafios e promover bem-estar, em todas as idades.",
+    },
+    {
+      icon: "compass",
+      title: "Orientação Profissional e Vocacional",
+      description:
+        "Apoio na descoberta de caminhos, escolhas e transições profissionais com mais clareza e propósito.",
+    },
+    {
+      icon: "clipboard-list",
+      title: "Avaliação Psicológica e Psicossocial",
+      description:
+        "Processos éticos e criteriosos que contribuem para decisões mais seguras e conscientes.",
+    },
+    {
+      icon: "briefcase",
+      title: "Consultoria para Empresas e NR-01",
+      description:
+        "Soluções em saúde mental, implementação da NR-01 e bem-estar organizacional para equipes mais saudáveis e produtivas.",
+    },
+    {
+      icon: "presentation",
+      title: "Palestras e Capacitações",
+      description:
+        "Conteúdo relevante e prático sobre saúde mental, desenvolvimento pessoal e profissional.",
+    },
+    {
+      icon: "shield-alert",
+      title: "Consultoria em Segurança Patrimonial",
+      description:
+        "Avaliação e organização de medidas para proteger pessoas, bens e instalações, com rotinas e treinamentos.",
+    },
   ],
-  highlights: [
-    { title: "Ambiente Seguro", subtitle: "Sigilo e acolhimento em cada sessão" },
-    { title: "Resultados Positivos", subtitle: "Acompanhamento comprometido com sua evolução" },
-  ],
-  ctaLabel: "VAMOS CONVERSAR?",
-  badge: "ATENDIMENTO ONLINE E PRESENCIAL",
+  ctaLabel: "FALAR NO WHATSAPP",
+  badge: {
+    heading: "Atendimento online e presencial",
+    subtext: "Com escuta, sigilo e respeito.",
+  },
   image: {
     src: "/images/abordagem-foto.png",
     alt: "Patrícia Marquezini sorrindo",

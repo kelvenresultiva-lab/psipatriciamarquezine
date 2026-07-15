@@ -1,6 +1,26 @@
 import Image from "next/image";
-import { approachContent } from "@/data/content";
+import {
+  Sofa,
+  Compass,
+  ClipboardList,
+  Briefcase,
+  Presentation,
+  ShieldAlert,
+  Heart,
+  type LucideIcon,
+} from "lucide-react";
+import { approachContent, siteConfig } from "@/data/content";
 import Reveal from "./Reveal";
+import WhatsappIcon from "./WhatsappIcon";
+
+const iconMap: Record<string, LucideIcon> = {
+  sofa: Sofa,
+  compass: Compass,
+  "clipboard-list": ClipboardList,
+  briefcase: Briefcase,
+  presentation: Presentation,
+  "shield-alert": ShieldAlert,
+};
 
 export default function Approach() {
   return (
@@ -10,33 +30,41 @@ export default function Approach() {
           <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-white uppercase">
             {approachContent.eyebrow}
           </p>
-          <h2 className="mb-6 font-serif text-3xl text-white sm:text-4xl">
+          <h2 className="mb-3 font-serif text-3xl text-white sm:text-4xl">
             {approachContent.heading}
           </h2>
-          <div className="mb-8 space-y-4">
-            {approachContent.paragraphs.map((paragraph) => (
-              <p key={paragraph} className="leading-relaxed text-white/70">
-                {paragraph}
-              </p>
-            ))}
-          </div>
+          <span className="mb-5 block h-px w-16 bg-white/40" />
+          <p className="mb-8 leading-relaxed text-white/70">
+            {approachContent.subtext}
+          </p>
 
-          <div className="mb-8 space-y-4">
-            {approachContent.highlights.map((item) => (
-              <div key={item.title}>
-                <p className="font-serif text-lg text-white underline decoration-white decoration-2 underline-offset-4">
-                  {item.title}
-                </p>
-                <p className="text-sm text-white/60">{item.subtitle}</p>
-              </div>
-            ))}
+          <div className="mb-8 divide-y divide-white/10">
+            {approachContent.items.map((item) => {
+              const Icon = iconMap[item.icon];
+              return (
+                <div key={item.title} className="flex items-start gap-4 py-4 first:pt-0">
+                  <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl bg-white/15 text-white">
+                    <Icon size={20} strokeWidth={1.75} />
+                  </div>
+                  <div>
+                    <p className="font-serif text-lg text-white">{item.title}</p>
+                    <p className="mt-1 text-sm leading-relaxed text-white/65">
+                      {item.description}
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
 
           <a
-            href="#contato"
-            className="inline-block rounded-full bg-gold px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase transition-opacity hover:opacity-90"
+            href={`https://wa.me/${siteConfig.phoneWhatsapp}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-8 py-3 text-sm font-semibold tracking-wider text-white uppercase transition-opacity hover:opacity-90"
           >
             {approachContent.ctaLabel}
+            <WhatsappIcon size={16} />
           </a>
         </Reveal>
 
@@ -50,10 +78,15 @@ export default function Approach() {
               sizes="(min-width: 1024px) 28rem, 90vw"
             />
           </div>
-          <div className="absolute -bottom-6 -left-2 flex h-32 w-32 -rotate-6 items-center justify-center rounded-full bg-gold p-4 text-center shadow-lg sm:-left-8">
-            <span className="font-serif text-sm leading-tight text-white">
-              {approachContent.badge}
-            </span>
+          <div className="absolute -bottom-6 left-4 w-56 rounded-2xl bg-white p-5 text-center shadow-xl sm:left-6">
+            <Heart size={22} className="mx-auto mb-2 text-gold" />
+            <p className="font-serif text-base leading-tight text-gold-dark">
+              {approachContent.badge.heading}
+            </p>
+            <span className="mx-auto my-2 block h-px w-8 bg-gold/40" />
+            <p className="text-xs leading-snug text-[#666666]">
+              {approachContent.badge.subtext}
+            </p>
           </div>
         </Reveal>
       </div>
