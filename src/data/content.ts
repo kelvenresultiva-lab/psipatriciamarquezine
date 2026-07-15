@@ -109,6 +109,8 @@ export const specialtiesContent = {
   heading: "Áreas de atuação",
   subtext:
     "Um olhar amplo, unindo clínica, orientação de carreira e consultoria organizacional.",
+  ctaText: "Quer entender qual dessas áreas faz mais sentido para o seu momento?",
+  ctaLabel: "FALAR NO WHATSAPP",
   items: [
     {
       icon: "stethoscope",
