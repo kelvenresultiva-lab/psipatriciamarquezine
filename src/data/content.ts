@@ -46,7 +46,7 @@ export const heroContent = {
   taglineHighlight: "e cuide de si com respeito e segurança.",
   bullets: [
     "Atendimento online e presencial.",
-    "Psicoterapia para adultos e orientação vocacional.",
+    "Psicoterapia para crianças, adolescentes e adultos.",
     "Convênios Unimed e Fusex.",
   ],
   primaryCta: {
@@ -273,7 +273,7 @@ export const faqContent = {
     {
       question: "A partir de que idade você atende?",
       answer:
-        "Atendo adultos que desejam iniciar um processo de autoconhecimento, individualmente ou em orientação vocacional — o importante é o desejo de começar.",
+        "Atendo crianças, adolescentes e adultos, com abordagens adequadas para cada fase da vida — seja em processo de autoconhecimento, orientação vocacional ou outras demandas. O importante é o desejo de começar.",
     },
     {
       question: "Qual o endereço do consultório?",
