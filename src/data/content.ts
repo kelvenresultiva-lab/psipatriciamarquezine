@@ -167,7 +167,7 @@ export const approachContent = {
   heading: "Psicoterapia individual e orientação vocacional para adultos",
   paragraphs: [
     "Meu trabalho parte da escuta cuidadosa da história de cada paciente, unindo conhecimento técnico a uma escuta sensível e humanizada.",
-    "Utilizo a Terapia Cognitivo-Comportamental como base teórica, ajudando você a compreender suas emoções e desenvolver recursos para viver com mais equilíbrio e bem-estar.",
+    "Possuo ampla experiência com Saúde Mental no Trabalho e na Psicologia Clínica. Atuei na aplicação e correção de testes psicológicos em concursos públicos da PMERJ e PCERJ. Por 10 anos, trabalhei na empresa Focus Health Solutions como psicóloga responsável pela saúde mental de trabalhadores Onshore e Offshore, realizando avaliações psicossociais e ministrando palestras. Atualmente, atuo como psicóloga clínica na APAE (Associação de Pais e Amigos dos Excepcionais), além de atender no consultório particular e prestar consultorias para empresas, com foco na implementação da NR-01.",
   ],
   highlights: [
     { title: "Ambiente Seguro", subtitle: "Sigilo e acolhimento em cada sessão" },
