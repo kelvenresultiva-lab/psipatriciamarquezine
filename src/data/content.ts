@@ -97,8 +97,7 @@ export const aboutContent = {
   heading: "Uma trajetória dedicada ao cuidado emocional",
   paragraphs: [
     "Sou psicóloga e, acima de tudo, acredito no poder da escuta e do acolhimento. Ao longo da minha trajetória, acompanho pessoas em seus processos de dor, mudança e crescimento, oferecendo um espaço seguro onde cada história é respeitada em sua singularidade.",
-    "Meu trabalho é fundamentado na Terapia Cognitivo-Comportamental, unindo conhecimento técnico a uma escuta sensível e humanizada, para que cada pessoa possa compreender suas emoções e desenvolver recursos para viver com mais equilíbrio e bem-estar.",
-    "Além da prática clínica, atuo como especialista em Avaliação Psicológica e Psicossocial, Orientadora Vocacional, Implementadora da NR-01, Analista de Recursos Humanos e especialista em Psicologia Hospitalar e da Saúde, integrando diferentes experiências em benefício de quem busca cuidado e orientação.",
+    "Possuo ampla experiência com Saúde Mental no Trabalho e na Psicologia Clínica. Atuei na aplicação e correção de testes psicológicos em concursos públicos da PMERJ e PCERJ. Por 10 anos, trabalhei na empresa Focus Health Solutions como psicóloga responsável pela saúde mental de trabalhadores Onshore e Offshore, realizando avaliações psicossociais e ministrando palestras. Atualmente, atuo como psicóloga clínica na APAE (Associação de Pais e Amigos dos Excepcionais), além de atender no consultório particular e prestar consultorias para empresas, com foco na implementação da NR-01.",
   ],
   ctaLabel: "VAMOS CONVERSAR?",
 };
